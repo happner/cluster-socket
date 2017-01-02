@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var Cluster = require('../');
+var options = require('./options')(__filename);
+var cluster = new Cluster(options);
+
+cluster.join()
+
+  .then(function () {
+  })
+
+  .catch(function (error) {
+    console.error(error);
+    process.exit(1);
+  });
+
