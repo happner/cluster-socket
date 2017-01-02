@@ -1,7 +1,7 @@
 {
-  "name": "happn-cluster-socket",
+  "name": "cluster-socket",
   "version": "1.0.0",
-  "description": "Happn cluster membership and replication socket client and server.",
+  "description": "Cluster membership and replication.",
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/happner/happn-cluster-socket.git"
+    "url": "git+https://github.com/happner/cluster-socket.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/happner/happn-cluster-socket/issues"
+    "url": "https://github.com/happner/cluster-socket/issues"
   },
-  "homepage": "https://github.com/happner/happn-cluster-socket#readme",
+  "homepage": "https://github.com/happner/cluster-socket#readme",
   "devDependencies": {
     "coveralls": "^2.11.15",
     "expect.js": "^0.3.1",
