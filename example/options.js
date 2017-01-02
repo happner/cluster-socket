@@ -1,3 +1,5 @@
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 var path = require('path');
 
 module.exports = function (caller) {
@@ -6,7 +8,8 @@ module.exports = function (caller) {
   seq = parseInt(seq);
 
   return {
-    host: 'en0',
+    seed: seq == 0,
+    host: '127.0.0.1',
     port: 11000 + seq,
     keyFile: __dirname + '/../server.key',
     certFile: __dirname + '/../server.cert',
