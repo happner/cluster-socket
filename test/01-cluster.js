@@ -2,6 +2,7 @@ var filename = require('path').basename(__filename);
 var expect = require('expect.js');
 var Promise = require('bluebird');
 
+
 var Cluster = require('../');
 
 describe(filename, function () {
@@ -83,6 +84,8 @@ describe(filename, function () {
   });
 
   context('join', function () {
+
+    it('x');
 
   });
 
